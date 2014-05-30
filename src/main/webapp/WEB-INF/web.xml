@@ -1,0 +1,15 @@
+<web-app>
+	<servlet>
+		<servlet-name>correlationexampleservlet</servlet-name>
+		<servlet-class>com.appdynamics.selab.web.CorrelationExampleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>correlationexampleservlet</servlet-name>
+		<url-pattern>/correlationexampleservlet</url-pattern>
+	</servlet-mapping>
+    <listener>
+        <listener-class>
+            com.appdynamics.selab.web.ContextListener
+        </listener-class>
+    </listener>
+</web-app>
